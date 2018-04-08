@@ -12,7 +12,7 @@
 
 <body>
 <!-- TOP WRAPPER IMAGE -->
-<div class="topimage" style="background-image:url('images/applyheader.jpeg');"> 
+<div class="topimage" style="background-image:url('images/loginheader.jpeg');"> 
 
   <!-- NAV BAR -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -24,24 +24,24 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><span><img class="logo" src="images/petsbest-logo.png"></span>Pet Rescue NI</a>
+        <a class="navbar-brand" href="index.php"><span><img class="logo" src="images/petsbest-logo.png"></span>Pet Rescue NI</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="gallery.html">Available Pets</a></li>
-          <li><a href="adopt.html">Apply to Adopt</a></li>
+          <li><a href="gallery.php">Available Pets</a></li>
+          <li><a href="adopt.php">Apply to Adopt</a></li>
           <li class="dropdown">
-            <a href="support.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support our Work<span class="caret"></span></a>
+            <a href="support.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support our Work<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="support.html">Events</a></li>
-              <li><a href="support.html#donate">Donate</a></li>
+              <li><a href="support.php">Events</a></li>
+              <li><a href="support.php#donate">Donate</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="login.html">Staff Log In <i class="fas fa-sign-in-alt"></i></a></li>
+          <li><a href="login.php">Staff Log In <i class="fas fa-sign-in-alt"></i></a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
@@ -51,58 +51,33 @@
 	 <div class="topimage">
 		  <div class="col-lg-12">
 			 <div id="content">
-				  <h1 id="wrapheadercontent">Apply to Adopt</h1>
+				  <h1 id="wrapheadercontent">Sign Up</h1>
 				  <hr align="left">
+              <form class="signup" action="includes/signup.inc.php" method="POST">
+                  <input type="text" class="form-control" name="first" placeholder="First Name">
+                  <input type="text" class="form-control" name="last" placeholder="Last Name">
+                  <input type="text" class="form-control" name="email" placeholder="Email">
+                  <input type="text" class="form-control" name="uid" placeholder="Username">
+                  <input type="password" class="form-control" name="pwd" placeholder="Password">
+                  <button type="submit" class="btn-warning" name="submit">Sign up</button>
+            </form>
 			 </div>
 		  </div>
 	 </div>
-  </div> <!--Container close -->
-</div> <!--Image wrap close -->
-
-<!-- CONTENT SECTION 1 -->
-<div class="jumbotron" id="leadjumbotron">
-    <h2 class="h2-responsive">Hello, world!</h2>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-        to featured content or information.</p>
-    <hr class="my-2">
-    <p>It uses utility classes for typography and spacing to space content out within the larger
-        container.
-    </p>
-    <a class="btn btn-primary btn-lg" role="button">Learn more</a>
+  </div>
 </div>
-
-<!-- CONTENT SECTION 2 -->
-<div class="container">
-  <h2>Adoption Application</h2>
-  <p>Please fill out the form below </p>
-  <form class="form-inline" action="/action_page.php">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
-
 
 <footer id="myFooter">
   <div class="container2">
     <div class="fullrow">
       <div class="col-sm-3">
-        <h2 class="logo"><a href="index.html" <span> <img class="logoftr" src="images/petsbest-logo.png"></span></a></h2>
+        <h2 class="logo"><a href="index.php" <span> <img class="logoftr" src="images/petsbest-logo.png"></span></a></h2>
       </div>
       <div class="col-sm-2">
        <h5>Support Us!</h5>
         <ul>
-          <li><a href="support.html">Events</a></li>
-          <li><a href="support.html#donate">Donation Options</a></li>               
+          <li><a href="support.php">Events</a></li>
+          <li><a href="support.php#donate">Donation Options</a></li>              
         </ul>
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="business" value="petrescueni@test.org.uk">   
@@ -137,7 +112,7 @@
             <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
         </div>
         <div>
-        <a href="contact.html" type="button" class="btn btn-default">Contact us</a> 
+        <a href="contact.php" type="button" class="btn btn-default">Contact us</a> 
 
         </div>
       </div>
